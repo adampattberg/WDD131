@@ -5,6 +5,13 @@
     padding: 50px;
 }
 
+.container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
 h1, h2 {
     text-align: center;
 }
