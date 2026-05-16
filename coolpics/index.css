@@ -52,7 +52,7 @@ nav a:hover {
     background-color: black;
     margin: 5px 0;
 }
-section img {
+figure img {
     width: 250px;
     height: 250px;
     object-fit: cover;
