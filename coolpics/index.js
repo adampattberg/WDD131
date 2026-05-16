@@ -1,31 +1,37 @@
+const images = document.querySelectorAll("figure img");
+const dialog = document.querySelector("dialog");
+const dialogImage = dialog.querySelector("img");
+const closeButton = dialog.querySelector(".close-viewer");
 
-const gallery = document.querySelector('.gallery');
-const index = document.querySelector('dialog');
-const indexImage = index.querySelector('img');
-const closeButton = index.querySelector('.close-viewer');
+images.forEach((img) => {
+    img.addEventListener("click", () => {
 
-gallery.addEventListener('click', openIndex);
+        const src = img.getAttribute("src");
+        const alt = img.getAttribute("alt");
 
-function openIndex(e) {
-    console.log(e.target);
+        const full = src.replace("sm", "full");
 
-    const img = e.target;
-    const src = img.getAttribute('src');
-    const alt = img.getAttribute('alt');
-    const full = src.replace('sm', 'full');
-    
-    indexImage.src = full;
-    indexImage.alt = alt;
+        dialogImage.src = full;
+        dialogImage.alt = alt;
 
-    index.showIndex();
-    
-}
-closeButton.addEventListener('click', () => {
-    index.close();
+        dialog.showModal();
+    });
 });
 
-index.addEventListener('click', (event) => {
-    if (event.target === index) {
-        index.close();
+closeButton.addEventListener("click", () => {
+    dialog.close();
+});
+
+dialog.addEventListener("click", (event) => {
+    const rect = dialogImage.getBoundingClientRect();
+
+    const clickedInside =
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom;
+
+    if (!clickedInside) {
+        dialog.close();
     }
 });
