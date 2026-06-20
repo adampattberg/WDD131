@@ -3,6 +3,9 @@
 header h1,
 .main h2 {
     font-family: "Amatic SC", cursive;
+    color: #2f7ecb;
+    font-size: 3rem;
+    margin: 0;
 }
 
 body{
@@ -13,6 +16,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .logo{
@@ -26,13 +30,11 @@ h1{
     font-size: 5em;
 }
 
-.search-container{
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
 .search-container form{
     display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .search-container input{
@@ -43,8 +45,6 @@ h1{
     padding: 0.5rem;
     background: none;
     border: none;
-    outline: none;
-    z-index: -1;
 }
 
 .search-container button img{
@@ -60,19 +60,51 @@ h1{
     padding: 1em;
 }
 
-.main button{}
+.main button{
+    width: fit-content;
+    border: 1px solid black;
+    padding: 0.25rem 0.5rem;
+}
 
 .main-img{
-    height: 282px;
-    width: 375px;
+    width: 100%;
+    height: auto;
+}
+
+.description{
+    display: none;
 }
 
 .social{
     display: flex;
     gap: 0.5em;
+    justify-content: end;
 }
 
 .social img{
     width: 32px;
     height: 32px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 700px){
+
+    .description{
+        display: block;
+    }
+
+    .main{
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .main-img{
+        width: 45%;
+    }
 }
