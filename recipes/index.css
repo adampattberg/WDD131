@@ -59,6 +59,10 @@ h1{
     padding: 1em;
 }
 
+h2{
+    color: deepskyblue;
+}
+
 .main button{
     width: fit-content;
     border: 1px solid black;
