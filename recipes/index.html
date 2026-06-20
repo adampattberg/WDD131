@@ -9,29 +9,37 @@
 <body>
 
     <header>
-        <img src="images/recipe-book.png" alt="recipe-book-logo">
+        <img class="logo" src="images/recipe-book.png" alt="recipe-book-logo">
         <h1>RecipeBook</h1>
     </header>
 
-    
-    <input type="text" placeholder="Find a Recipe" name="search">
-    <button type="submit"><i class="fa fa-search></i></button>
-
-    <div>
-
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Find a recipe" name="search">
+        <button type="submit"><img src="images/search.svg" alt="search-img"></button>
+      </form>
     </div>
+
+    <div class="main">
+        <img class="main-img" src="images/apple-crisp.jpg" alt="apple-crisp">
+        <button>dessert</button>
+        <h2>Apple Crisp</h2>
     
-    <span
-      class="rating"
-      role="img"
-      aria-label="Rating: 4 out of 5 stars"
-    >
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star">⭐</span>
-      <span aria-hidden="true" class="icon-star-empty">☆</span>
-    </span>
+        <span
+          class="rating"
+          role="img"
+          aria-label="Rating: 4 out of 5 stars"
+        >
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+
+        <p>This apple crisp recipe is a simple yet delicious fall</p>
+        <p>dessert that's great served warm with vanilla ice cream.</p>
+    </div>
                 
     
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -58,7 +66,7 @@
         
     <div class="social">
         <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-        <a id="#" href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
         <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
         <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
     </div>                  

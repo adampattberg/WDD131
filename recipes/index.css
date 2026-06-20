@@ -1,4 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+header h1,
+.main h2 {
+    font-family: "Amatic SC", cursive;
+}
+
+body{
+    margin: 3%;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo{
+    height: 175px;
+    width: 175px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1{
+    font-size: 5em;
+}
+
+.search-container{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.search-container form{
+    display: flex;
+}
+
+.search-container input{
+    flex: 1;
+}
+
+.search-container button{
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: -1;
+}
+
+.search-container button img{
+    width: 20px;
+    height: 20px;
+}
+
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.main button{}
+
+.main-img{
+    height: 282px;
+    width: 375px;
+}
+
 .social{
-    width: 180px;
-    height: 180px;
+    display: flex;
+    gap: 0.5em;
+}
+
+.social img{
+    width: 32px;
+    height: 32px;
 }
