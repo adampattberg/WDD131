@@ -30,24 +30,24 @@ h1{
     color: black;
 }
 
-.search-container form{
+#searchForm{
     display: flex;
     border: 2px solid black;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.search-container input{
+#searchForm input{
     flex: 1;
 }
 
-.search-container button{
+#searchForm button{
     padding: 0.5rem;
     background: none;
     border: none;
 }
 
-.search-container button img{
+#searchForm button img{
     width: 20px;
     height: 20px;
 }

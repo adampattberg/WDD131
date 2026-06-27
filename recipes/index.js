@@ -252,7 +252,7 @@ const recipes = [
 		datePublished: '2023-10-10',
 		tags: ['dessert'],
 		description:
-			"This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
+		"This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
 		image: './images/apple-crisp.jpg',
 		recipeIngredient: [
 			'10 C apples, cored and sliced',
@@ -279,3 +279,110 @@ const recipes = [
 		rating: 4
 	}
 ]
+
+// Random recipe on page load
+const randomNum = Math.floor(Math.random() * recipes.length);
+
+const recipeContainer = document.querySelector(".main");
+const form = document.querySelector("#searchForm");
+
+form.addEventListener("submit", search);
+
+function search(event) {
+	event.preventDefault();
+
+	const recipeQuery = document
+		.querySelector("#search")
+		.value
+		.toLowerCase();
+
+	const filteredRecipes = recipes.filter(function(recipe) {
+		return (
+			recipe.name.toLowerCase().includes(recipeQuery) ||
+			recipe.description.toLowerCase().includes(recipeQuery) ||
+			recipe.tags.find(tag =>
+				tag.toLowerCase().includes(recipeQuery)
+			)
+		);
+	});
+
+	filteredRecipes.sort(compareRecipes);
+
+	recipeContainer.innerHTML = "";
+
+	filteredRecipes.forEach(function(recipe) {
+		renderRecipe(recipe);
+	});
+}
+
+function compareRecipes(a, b) {
+	if (a.name < b.name) {
+		return -1;
+	} else if (a.name > b.name) {
+		return 1;
+	}
+
+	return 0;
+}
+
+function tagTemplate(tags) {
+    return tags
+        .map(tag => `<button>${tag}</button>`)
+        .join(" ");
+}
+
+function ratingTemplate(rating) {
+
+    let html = `<span class="rating">`;
+
+    for (let i = 1; i <= 5; i++) {
+
+        if (i <= Math.floor(rating)) {
+            html += `<span>⭐</span>`;
+        }
+        else {
+            html += `<span>☆</span>`;
+        }
+
+    }
+
+    html += `</span>`;
+
+    return html;
+}
+
+function recipeTemplate(recipe) {
+    return `
+        <img class="main-img"
+             src="${recipe.image}"
+             alt="${recipe.name}">
+
+        <div class="recipe-info">
+
+            ${tagTemplate(recipe.tags)}
+
+            <h2>${recipe.name}</h2>
+
+            ${ratingTemplate(recipe.rating)}
+
+            <p class="description">
+                ${recipe.description}
+            </p>
+
+        </div>
+    `;
+}
+
+function renderRecipe(recipe) {
+
+    recipeContainer.innerHTML += recipeTemplate(recipe);
+
+}
+
+function init() {
+
+    renderRecipe(recipes[randomNum]);
+
+}
+
+init();
