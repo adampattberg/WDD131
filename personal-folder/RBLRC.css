@@ -1,0 +1,24 @@
+/*
+primary #091B31
+secondary #F9C040
+accent 1 #BEC1C3
+accent 2 #6D3D14
+*/
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-align: center;
+    background-color: #091B31;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
