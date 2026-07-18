@@ -35,7 +35,7 @@ nav{
 
 nav a{
     background-color: #091B31;
-    color: white;
+    color: #BEC1C3;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ nav a{
 
 nav a:hover{
     background-color: #091B31;
-    color: #BEC1C3;
+    color: #6D3D14;
 }
 
 body{
@@ -85,7 +85,7 @@ grid-template-columns: repeat(10, 1fr);
     margin-top: 1em;
     background-color: #091B31;
     line-height: 1.5em;
-    padding: 29.25px;
+    padding: 2em;
     grid-column: 4/11;
     grid-row: 1/4;
     box-shadow: 5px 5px 10px #6f7364;
@@ -111,7 +111,7 @@ grid-template-columns: repeat(10, 1fr);
     margin-top: 1em;
     background-color: #091B31;
     line-height: 1.5em;
-    padding: 29.25px;
+    padding: 2em;
     grid-column: 1/6;
     grid-row: 4/7;
     box-shadow: -5px 5px 10px #6f7364; 
@@ -137,9 +137,87 @@ grid-template-columns: repeat(10, 1fr);
     margin-top: 1em;
     background-color: #091B31;
     line-height: 1.5em;
-    padding: 29.25px;
+    padding: 2em;
     grid-column: 4/11;
     grid-row: 7/10;
+    box-shadow: 5px 5px 10px #6f7364; 
+}
+
+.power{
+    margin-top: 1em;
+    width: 100%;
+    grid-column: 7/11;
+    grid-row: 10/13;
+    z-index: 2;
+}
+
+#background-power{
+    margin-top: 1em;
+    grid-column: 7/11;
+    grid-row: 10/13;
+    background-color: #091B31;
+    box-shadow: -5px 5px 10px #6f7364;
+}
+
+.power-msg{
+    margin-top: 1em;
+    background-color: #091B31;
+    line-height: 1.5em;
+    padding: 2em;
+    grid-column: 1/7;
+    grid-row: 10/13;
+    box-shadow: -5px 5px 10px #6f7364; 
+}
+
+.motor{
+    margin-top: 1em;
+    width: 100%;
+    grid-column: 7/11;
+    grid-row: 13/16;
+    z-index: 2;
+}
+
+#background-motor{
+    margin-top: 1em;
+    grid-column: 7/11;
+    grid-row: 13/16;
+    background-color: #091B31;
+    box-shadow: -5px 5px 10px #6f7364;
+}
+
+.motor-msg{
+    margin-top: 1em;
+    background-color: #091B31;
+    line-height: 1.5em;
+    padding: 2em;
+    grid-column: 1/7;
+    grid-row: 13/16;
+    box-shadow: -5px 5px 10px #6f7364; 
+}
+
+.battery{
+    margin-top: 1em;
+    width: 100%;
+    grid-column: 1/5;
+    grid-row: 16/19;
+    z-index: 2;
+}
+
+#background-battery{
+    margin-top: 1em;
+    grid-column: 1/5;
+    grid-row: 16/19;
+    background-color: #091B31;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.battery-msg{
+    margin-top: 1em;
+    background-color: #091B31;
+    line-height: 1.5em;
+    padding: 2em;
+    grid-column: 5/11;
+    grid-row: 16/19;
     box-shadow: 5px 5px 10px #6f7364; 
 }
 
@@ -147,7 +225,7 @@ grid-template-columns: repeat(10, 1fr);
     margin-top: 1em;
     width: 100%;
     grid-column: 1/6;
-    grid-row: 14/17;
+    grid-row: 19/22;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -155,26 +233,26 @@ grid-template-columns: repeat(10, 1fr);
     margin-top: 1em;
     background-color: #091B31;
     line-height: 1.5em;
-    padding: 29.25px;
+    padding: 2em;
     grid-column: 6/11;
-    grid-row: 14/17;
+    grid-row: 19/22;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
 .road-msg a{
-    color: white;
+    color: #BEC1C3;
     text-decoration: none;
 }
 
 .road-msg a:hover{
-    color: #BEC1C3;
+    color: #6D3D14;
 }
 
 .dirt{
     margin-top: 1em;
     width: 100%;
     grid-column: 6/11;
-    grid-row: 17/20;
+    grid-row: 22/25;
     box-shadow: -5px 5px 10px #6f7364;
     }
     
@@ -182,19 +260,23 @@ grid-template-columns: repeat(10, 1fr);
     margin-top: 1em;
     background-color: #091B31;
     line-height: 1.5em;
-    padding: 29.25px;
+    padding: 2em;
     grid-column: 1/6;
-    grid-row: 17/20;
+    grid-row: 22/25;
     box-shadow: -5px 5px 10px #6f7364;
 }
 
 .dirt-msg a{
-    color: white;
+    color: #BEC1C3;
     text-decoration: none;
 }
 
 .dirt-msg a:hover{
-    color: #BEC1C3;
+    color: #6D3D14;
+}
+
+.intro, .type, .build, .power, .motor, .battery, .road, .dirt{
+    align-self: center;
 }
 
 footer{
@@ -209,13 +291,13 @@ footer{
 
 footer a{
     background-color: #091B31;
-    color: white;
+    color: #BEC1C3;
     text-decoration: none;
 }
 
 footer a:hover{
     background-color: #091B31;
-    color: #BEC1C3;
+    color: #6D3D14;
 }
 
 footer p{
