@@ -78,6 +78,13 @@ grid-template-columns: repeat(10, 1fr);
     width: 100%;
     grid-column: 1/4;
     grid-row: 1/4;
+}
+
+#background-intro{
+    margin-top: 1em;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-color: #091B31;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -226,6 +233,13 @@ grid-template-columns: repeat(10, 1fr);
     width: 100%;
     grid-column: 1/6;
     grid-row: 19/22;
+}
+
+#background-road{
+    margin-top: 1em;
+    grid-column: 1/6;
+    grid-row: 19/22;
+    background-color: #091B31;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -253,9 +267,16 @@ grid-template-columns: repeat(10, 1fr);
     width: 100%;
     grid-column: 6/11;
     grid-row: 22/25;
+}
+
+#background-dirt{
+    margin-top: 1em;
+    grid-column: 6/11;
+    grid-row: 22/25;
+    background-color: #091B31;
     box-shadow: -5px 5px 10px #6f7364;
-    }
-    
+}
+ 
 .dirt-msg{
     margin-top: 1em;
     background-color: #091B31;
