@@ -28,6 +28,10 @@ h1{
     color: white;
 }
 
+button {
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     justify-content: space-around;

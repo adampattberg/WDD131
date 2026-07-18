@@ -28,6 +28,10 @@ h1{
     color: white;
 }
 
+button {
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -335,6 +339,37 @@ footer .social img{
 
 @media (max-width:900px){
 
+header{
+    display: block;
+    text-align: center;
+}
+
+button{
+    display: block;
+}
+
+nav{
+    flex-wrap: wrap;
+    display: none;
+}
+
+nav.open{
+    display: flex;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+
+body{
+    font-size: 18px;
+}
+
+img{
+    display: block;
+}
+
 .home-grid{
     display:block;
 }
@@ -348,7 +383,7 @@ footer .social img{
 .road,
 .dirt{
     width:100%;
-    margin:0;
+    margin-bottom: 1em;
 }
 
 .intro-msg,
@@ -362,6 +397,23 @@ footer .social img{
     padding:1.5em;
     box-shadow:none;
     margin-bottom:2em;
+}
+
+#background-intro,
+#background-type,
+#background-build,
+#background-power,
+#background-motor,
+#background-battery,
+#background-road,
+#background-dirt{
+    display: none;
+}
+
+footer{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
 }
 
 }
