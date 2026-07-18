@@ -55,40 +55,47 @@ body{
     padding: 0;
 }
 
+main h2{
+    background-color: #091B31;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p{
+    background-color: #091B31;
+    color: white;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
 .home-grid{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: repeat(10, 1fr);
 }
 
 .dirt{
     margin-top: 1em;
     width: 100%;
     grid-column: 1/6;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364
+    grid-row: 19/22;
+}
+
+#background-dirt{
+    margin-top: 1em;
+    grid-column: 1/6;
+    grid-row: 19/22;
+    background-color: #091B31;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .dirt-msg{
     margin-top: 1em;
     background-color: #091B31;
     line-height: 1.5em;
-    padding: 29.25px;
+    padding: 2em;
     grid-column: 6/11;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364
-}
-
-.dirt-msg h2{
-    background-color: #091B31;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.dirt-msg p{
-    background-color: #091B31;
-    color: white;
-    font-size: 0.8em;
-    padding-bottom: 15px;
+    grid-row: 19/22;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .dirt-msg a{
@@ -97,7 +104,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .dirt-msg a:hover{
-    color: #BEC1C3;
+    color: #6D3D14;
+}
+
+.dirt{
+    align-self: center;
 }
 
 footer{
