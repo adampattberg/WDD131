@@ -55,16 +55,67 @@ body{
     padding: 0;
 }
 
+main h2{
+    background-color: #091B31;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p{
+    background-color: #091B31;
+    color: white;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
 .home-grid{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: repeat(10, 1fr);
+}
+
+.intro{
+    margin-top: 1em;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    box-shadow: 5px 5px 10px #6f7364
+}
+
+.intro-msg{
+    margin-top: 1em;
+    background-color: #091B31;
+    line-height: 1.5em;
+    padding: 29.25px;
+    grid-column: 4/11;
+    grid-row: 1/4;
+    box-shadow: 5px 5px 10px #6f7364
+}
+
+.type{
+    margin-top: 1em;
+    width: 100%;
+    grid-column: 6/11;
+    grid-row: 4/7;
+    box-shadow: 5px 5px 10px #6f7364
+    
+}
+
+.type-msg{
+    margin-top: 1em;
+    background-color: #091B31;
+    line-height: 1.5em;
+    padding: 29.25px;
+    grid-column: 1/6;
+    grid-row: 4/7;
+    box-shadow: 5px 5px 10px #6f7364
+    
 }
 
 .road{
     margin-top: 1em;
     width: 100%;
     grid-column: 1/6;
-    grid-row: 5/8;
+    grid-row: 14/17;
     box-shadow: 5px 5px 10px #6f7364
 }
 
@@ -74,21 +125,8 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     line-height: 1.5em;
     padding: 29.25px;
     grid-column: 6/11;
-    grid-row: 6/7;
+    grid-row: 14/17;
     box-shadow: 5px 5px 10px #6f7364
-}
-
-.road-msg h2{
-    background-color: #091B31;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.road-msg p{
-    background-color: #091B31;
-    color: white;
-    font-size: 0.8em;
-    padding-bottom: 15px;
 }
 
 .road-msg a{
@@ -104,7 +142,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 1em;
     width: 100%;
     grid-column: 6/11;
-    grid-row: 9/12;
+    grid-row: 17/20;
     box-shadow: -5px 5px 10px #6f7364
     }
     
@@ -114,21 +152,8 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     line-height: 1.5em;
     padding: 29.25px;
     grid-column: 1/6;
-    grid-row: 9/12;
+    grid-row: 17/20;
     box-shadow: -5px 5px 10px #6f7364
-}
-
-.dirt-msg h2{
-    background-color: #091B31;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.dirt-msg p{
-    background-color: #091B31;
-    color: white;
-    font-size: 0.8em;
-    padding-bottom: 15px;
 }
 
 .dirt-msg a{
