@@ -48,7 +48,9 @@ if (image) {
 
     }
 
-    setInterval(changeImage, 5000);
+    if (image && images.length > 1) {
+        setInterval(changeImage, 5000);
+    }
 
 }
 

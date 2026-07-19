@@ -28,8 +28,15 @@ h1{
     color: white;
 }
 
-button {
+#menu-button {
+    display: none;
     cursor: pointer;
+    padding: .75rem 1rem;
+    font-size: 1.2rem;
+    background-color: #091B31;
+    color: white;
+    border: none;
+    width: 100%;
 }
 
 nav{
@@ -183,17 +190,17 @@ grid-template-columns: repeat(10, 1fr);
 .motor{
     margin-top: 3em;
     width: 100%;
-    grid-column: 7/11;
+    grid-column: 1/7;
     grid-row: 13/16;
     z-index: 2;
 }
 
 #background-motor{
     margin-top: 3em;
-    grid-column: 7/11;
+    grid-column: 1/7;
     grid-row: 13/16;
     background-color: #091B31;
-    box-shadow: -5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .motor-msg{
@@ -201,25 +208,25 @@ grid-template-columns: repeat(10, 1fr);
     background-color: #091B31;
     line-height: 1.5em;
     padding: 2em;
-    grid-column: 1/7;
+    grid-column: 7/11;
     grid-row: 13/16;
-    box-shadow: -5px 5px 10px #6f7364; 
+    box-shadow: 5px 5px 10px #6f7364; 
 }
 
 .battery{
     margin-top: 3em;
     width: 100%;
-    grid-column: 1/5;
+    grid-column: 7/11;
     grid-row: 16/19;
     z-index: 2;
 }
 
 #background-battery{
     margin-top: 3em;
-    grid-column: 1/5;
+    grid-column: 7/11;
     grid-row: 16/19;
     background-color: #091B31;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: -5px 5px 10px #6f7364;
 }
 
 .battery-msg{
@@ -227,9 +234,9 @@ grid-template-columns: repeat(10, 1fr);
     background-color: #091B31;
     line-height: 1.5em;
     padding: 2em;
-    grid-column: 5/11;
+    grid-column: 1/7;
     grid-row: 16/19;
-    box-shadow: 5px 5px 10px #6f7364; 
+    box-shadow: -5px 5px 10px #6f7364; 
 }
 
 .road{
@@ -344,7 +351,7 @@ header{
     text-align: center;
 }
 
-button{
+#menu-button {
     display: block;
 }
 
