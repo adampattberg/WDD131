@@ -28,8 +28,8 @@ if (image) {
 
         images = [
             "styles/Slash-1.webp",
-            "styles/Slash-2.webp",
-            "styles/Slash-3.webp"
+            "styles/Slash-2.jpg",
+            "styles/Slash-3.jpg"
         ];
 
     }
